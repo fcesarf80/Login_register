@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     gap: .25em;
     padding-top: 2rem;
+    margin: 0 1rem;
 }
 
 .form__title {
