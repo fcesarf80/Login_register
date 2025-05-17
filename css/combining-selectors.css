@@ -1,0 +1,35 @@
+body {
+    margin: 1.5rem;
+    letter-spacing: .2px;
+    /* text-align: center; */
+}
+
+article {
+    padding: .5rem;
+    outline: 3px solid green;
+}
+article a {
+    color: red;
+}
+
+article a > b {
+    color: green;
+}
+
+h3 + p {
+    background-color: yellow;
+}
+
+h3 ~ p {
+    border: 1px dashed orange;
+    padding: 1px;
+}
+
+.emphasis {
+    padding-left: 4rem;
+}
+
+p:not(.emphasis) {
+    background-color: #ddd;
+}
+
