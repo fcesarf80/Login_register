@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     
-    <title>Combining CSS Selectors</title>
+    <title>Attribute CSS Selectors</title>
 
     <link rel="stylesheet" href="../css/combining-selectors.css">
 </head>
+
 <body>
-    <p>paragraph <a href="#">fake link in <b>bold</b></a></p>
-
-    <article>
-        <p>Paragraph before the title with in <b>bold</b> </p>
-
-        <h3>Title</h3>
-        <p>any paragraph</p>
-        <h3>Title</h3>
-        <p>paragraph <a href="#">fake link in <b>bold</b></a></p>
-        <p class="emphasis">paragraph <a href="#">fake link in <b>bold</b></a></p>
-        <p>paragraph <a href="#">fake link in <b>bold</b></a></p>
-        
-    </article>
-
-    <p>paragraph <a href="#">fake link in <b>bold</b></a></p>
-    
+    <ul>
+        <li><a href="#">Fake link</a></li>
+        <li><a href="#" class="link-ok">Fake link</a></li>
+        <li><a href="https//selectors.html" target="_blank">External link</a></li>
+        <li><a href="fakefolder/file.pdf">Link to pdf</a></li>
+        <li><a href="subscribe.html">Internal link</a></li>
+    </ul>
+    <hr>
+    <div>
+        <p>first paragraph</p>
+        <p>second paragraph</p>
+        <p>third paragraph</p>
+    </div>
+    <hr>
+    <div>
+        <br>
+        <a href="#">first paragraph</a>
+        <p>second paragraph</p>
+        <br>
+        <p>third paragraph</p>
+        <p>third paragraph</p>
+        <p>third paragraph</p>
+        <span><b>This is just a span</b></span>
+    </div>
 </body>
 
 </html>

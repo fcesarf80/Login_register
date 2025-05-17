@@ -1,35 +1,32 @@
-body {
-    margin: 1.5rem;
-    letter-spacing: .2px;
-    /* text-align: center; */
+/* a[href="#"]:not(.link-ok) { */
+    /* color: red; */
+    opacity: .2;
 }
 
-article {
-    padding: .5rem;
-    outline: 3px solid green;
-}
-article a {
+a[href^="http"]{
     color: red;
 }
 
-article a > b {
+a[href$=".pdf"]{
     color: green;
 }
 
-h3 + p {
-    background-color: yellow;
+a[target="_blank"] {
+    text-decoration: none;
 }
 
-h3 ~ p {
-    border: 1px dashed orange;
-    padding: 1px;
+p:first-child {
+    color: red;
 }
 
-.emphasis {
-    padding-left: 4rem;
+p:nth-child(2){
+    background-color: blue;
 }
 
-p:not(.emphasis) {
-    background-color: #ddd;
+p:first-of-type{
+    background-color: green;
 }
 
+p:last-of-type{
+    background-color: red;
+}
