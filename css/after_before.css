@@ -1,3 +1,30 @@
-a[target="blamnk"]::after{
-    content: url(../)
+a {
+    display: inline-block;
+    margin-bottom: 1em;;
+}
+
+a[target="_blank"]::after {
+    content: url(../imagens/icon_Window-icon.png);
+    margin-left: .5em;
+}
+
+a[href$=".pdf"]::before {
+    content: url(../imagens/icon_pdf-icon.gif);
+    margin-right: .5em;
+}
+
+input[type="checkbox"]:checked+label {
+    color: green;
+}
+
+input[type="checkbox"]:not(:disabled) + label {
+    color: red;
+}
+
+input[type="checkbox"]:disabled + label {
+    color: blue;
+}
+
+li li:nth-child(3) {
+    background-color: yellow;
 }
