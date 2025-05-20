@@ -2,58 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+        
+    <title>Variaveis - parte 2</title>
     <style>
-        button {
-            background-color: #7a7979;
-            color: white;
-            border: none;
-            padding: 1em;
-            margin-bottom: .5em;
-        }
-
-        button:disabled {
-            opacity: .5;
-        }
-
-        p:empty::before {
-            content: "Empty paragraph!";
+        :root{
+            --success-color: green;
+            --error-color:red;
         }
         
-        a:hover,
-        a:focus {
-            background-color: yellow;
+        body {
+            --erro-color:orange;
+            color: white;
+            background-color: rgb(3, 0, 11);
         }
+
+        .container {
+            --error-color: pink;
+        }
+
+        .div2 {
+            --error-color: yellow;
+        }
+
+        b {
+            --error-color:
+        }
+
+        p:empty:before
     </style>
-    
-    <title>Pseudo-classes</title>
 </head>
 <body>
-    <button>Vai</button><br>
-    <button disabled>Vai disable</button><br>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, distinctio?</p>
-    <p> </p>
-    <p></p>
-    <ul>
-        <li><a href="">Fake link!</a></li>
-        <li><a href="">Fake link!</a></li>
-        <li><a href="">Fake link!</a></li>
-        <li><a href="">Fake link!</a></li>
-    </ul>
-    <p tabindex="">Lorem ipsum dolor sit amet.</p>
-    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
-    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
-    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
-    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
-    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
-
-    <form action="#">
-        <input type="text"><br>
-        <input type="text"><br>
-        <input type="text"><br>
-        <input type="text"><br>
-        <input type="text"><br>
-        <input type="text"><br>
-    </form>
-    
+    <div class="container">
+        <div class="div1">
+            <p>Lorem, ipsum <b>dolor</b>.</p>
+        </div>
+        <div class="div2">
+            <p>Lorem, <b>ipsum</b> dolor.</p>
+        </div>
+    </div>
+    <p>teste</p>    
 </body>
 </html>
